@@ -41,6 +41,8 @@ object Grind {
         }
         Tracing.psInfo.println("[Output] " + outFile.absolutePath)
 
+        val prettyPrint = true
+
         // Supply model
         Tracing.progress("before model is supplied,", startTime)
         val model = Factory(inDir, inDir2).get()
@@ -49,7 +51,7 @@ object Grind {
 
         // Consume model
         Tracing.progress("before model is consumed,", startTime)
-        ModelConsumer(outFile).accept(model!!)
+        ModelConsumer(outFile, prettyPrint = prettyPrint).accept(model!!)
         Tracing.progress("after model is consumed,", startTime)
 
         // End
