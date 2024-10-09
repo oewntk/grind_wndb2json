@@ -9,7 +9,7 @@
 dbtag=$1
 shift
 if [ -z "${dbtag}" ]; then
-  dbtag=31
+  dbtag=2024
 fi
 
 # C O L O R S
@@ -25,12 +25,11 @@ Z='\u001b[0m'
 # I N
 
 DATADIR=json
-JSON="${DATADIR}/wn31.json"
+JSON="${DATADIR}/oewn.json"
 echo "pack to ${DISTDIR} from ${DATADIR}"
 
 # O U T
-
-ZIP_ARCHIVE=${DATADIR}/wn${dbtag}.json.zip
+ZIP_ARCHIVE=${DATADIR}/oewn-${dbtag}.json.zip
 
 # M A I N
 
