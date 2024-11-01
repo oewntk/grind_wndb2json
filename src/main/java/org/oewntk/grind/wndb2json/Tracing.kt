@@ -1,6 +1,8 @@
 /*
  * Copyright (c) 2024. Bernard Bou.
  */
+@file:Suppress("unused")
+
 package org.oewntk.grind.wndb2json
 
 import java.io.PrintStream
