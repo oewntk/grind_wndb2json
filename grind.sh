@@ -27,5 +27,5 @@ echo "OUT:   ${OUTFILE}" 1>&2;
 
 opts="-pretty"
 
-jar=target/wndb2json-2.3.2-uber.jar
+jar=target/wndb2json-2.4.0-uber.jar
 java -ea -jar "${jar}" ${opts} "${IN}" "${IN2}" "${OUTFILE}"
