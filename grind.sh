@@ -27,5 +27,16 @@ echo "OUT:   ${OUTFILE}" 1>&2;
 
 opts="-pretty"
 
-jar=target/wndb2json-2.4.0-uber.jar
+jar=wndb2json-2.4.0-uber.jar
+if [ ! -e "${jar}" ]; then
+  if [ ! -e "target/${jar}" ]; then
+    echo "Non existing uber jar" >&2
+    exit 1
+    fi
+  ln -s "target/${jar}"
+  fi
+if [ ! -e "${jar}" ]; then
+  echo "Non existing uber jar" >&2
+  exit 2
+  fi
 java -ea -jar "${jar}" ${opts} "${IN}" "${IN2}" "${OUTFILE}"
