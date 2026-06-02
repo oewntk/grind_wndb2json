@@ -5,9 +5,12 @@
 /wndb*
 /json*/
 /json*
+
 **/_*/
 **/_*
 **/*.jar
+**/build
+
 /dist/
 /dist
 /dependency-reduced-pom.xml
