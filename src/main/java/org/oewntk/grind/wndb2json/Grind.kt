@@ -3,7 +3,7 @@
  */
 package org.oewntk.grind.wndb2json
 
-import org.oewntk.json.out.ModelConsumer
+import org.oewntk.json.out.model.ModelConsumer
 import org.oewntk.wndb.`in`.Factory
 import java.io.File
 
