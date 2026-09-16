@@ -46,7 +46,7 @@ grinds the JSON database
 
 		<groupId>io.github.oewntk</groupId>
 		<artifactId>wndb2json</artifactId>
-		<version>3.0.1</version>
+		<version>3.0.2</version>
 
 ## Dependencies
 
